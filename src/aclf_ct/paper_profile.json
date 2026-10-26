@@ -1,0 +1,194 @@
+{
+  "ClinicalMP": {
+    "source_run": "ClinicalMP model",
+    "classifier": "RotF",
+    "features": [
+      "ALT",
+      "TBIL",
+      "INR",
+      "HGB",
+      "SCR",
+      "ALB"
+    ],
+    "use_calibrated_probabilities": false,
+    "counts": {
+      "train": 394,
+      "internal": 161,
+      "external": 159
+    },
+    "events": {
+      "train": 128,
+      "internal": 53,
+      "external": 72
+    },
+    "auc_bootstrap_seeds": {
+      "internal": 528,
+      "external": 1026
+    }
+  },
+  "CLSMFusion": {
+    "source_run": "CLSMFusion model",
+    "classifier": "LR",
+    "features": [
+      "Liver_f_80",
+      "TBIL",
+      "Liver_f_1214",
+      "Liver_f_1987",
+      "Liver_f_2042",
+      "Spleen_f_18",
+      "ALT",
+      "Muscle_f_86",
+      "Liver_f_1590",
+      "Spleen_f_870",
+      "INR",
+      "Spleen_f_1988",
+      "Liver_f_2001",
+      "Muscle_f_274",
+      "Liver_f_20",
+      "Muscle_f_1426",
+      "Muscle_f_2046",
+      "Muscle_f_318",
+      "Liver_f_2009",
+      "Spleen_f_812",
+      "Spleen_f_1027"
+    ],
+    "use_calibrated_probabilities": true,
+    "counts": {
+      "train": 394,
+      "internal": 161,
+      "external": 159
+    },
+    "events": {
+      "train": 128,
+      "internal": 53,
+      "external": 72
+    },
+    "auc_bootstrap_seeds": {
+      "internal": 144,
+      "external": 130
+    }
+  },
+  "Liver": {
+    "source_run": "Liver model",
+    "classifier": "NB",
+    "features": [
+      "Liver_f_80",
+      "Liver_f_1214",
+      "Liver_f_2042",
+      "Liver_f_1590",
+      "Liver_f_2009",
+      "Liver_f_1987"
+    ],
+    "use_calibrated_probabilities": true,
+    "counts": {
+      "train": 394,
+      "internal": 161,
+      "external": 159
+    },
+    "events": {
+      "train": 128,
+      "internal": 53,
+      "external": 72
+    },
+    "auc_bootstrap_seeds": {
+      "internal": 415,
+      "external": 913
+    }
+  },
+  "LSMFusion": {
+    "source_run": "LSMFusion model",
+    "classifier": "LR",
+    "features": [
+      "Liver_f_80",
+      "Liver_f_1214",
+      "Liver_f_2042",
+      "Liver_f_1987",
+      "Liver_f_1590",
+      "Spleen_f_18",
+      "Muscle_f_2046",
+      "Liver_f_2009",
+      "Muscle_f_274",
+      "Spleen_f_870",
+      "Muscle_f_1426",
+      "Muscle_f_86",
+      "Liver_f_20"
+    ],
+    "use_calibrated_probabilities": true,
+    "counts": {
+      "train": 394,
+      "internal": 161,
+      "external": 159
+    },
+    "events": {
+      "train": 128,
+      "internal": 53,
+      "external": 72
+    },
+    "auc_bootstrap_seeds": {
+      "internal": 139,
+      "external": 125
+    }
+  },
+  "Muscle": {
+    "source_run": "Muscle model",
+    "classifier": "GPC",
+    "features": [
+      "Muscle_f_2046",
+      "Muscle_f_86",
+      "Muscle_f_1937",
+      "Muscle_f_274",
+      "Muscle_f_318",
+      "Muscle_f_1426",
+      "Muscle_f_1953"
+    ],
+    "use_calibrated_probabilities": true,
+    "counts": {
+      "train": 394,
+      "internal": 161,
+      "external": 159
+    },
+    "events": {
+      "train": 128,
+      "internal": 53,
+      "external": 72
+    },
+    "auc_bootstrap_seeds": {
+      "internal": 663,
+      "external": 161
+    }
+  },
+  "Spleen": {
+    "source_run": "Spleen model",
+    "classifier": "NB",
+    "features": [
+      "Spleen_f_18",
+      "Spleen_f_870",
+      "Spleen_f_406",
+      "Spleen_f_812",
+      "Spleen_f_2027",
+      "Spleen_f_2038",
+      "Spleen_f_235",
+      "Spleen_f_143",
+      "Spleen_f_1988",
+      "Spleen_f_230",
+      "Spleen_f_1027",
+      "Spleen_f_2011",
+      "Spleen_f_1976"
+    ],
+    "use_calibrated_probabilities": true,
+    "counts": {
+      "train": 394,
+      "internal": 161,
+      "external": 159
+    },
+    "events": {
+      "train": 128,
+      "internal": 53,
+      "external": 72
+    },
+    "auc_bootstrap_seeds": {
+      "internal": 505,
+      "external": 491
+    }
+  }
+}
